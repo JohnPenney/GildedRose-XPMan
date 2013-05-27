@@ -1,5 +1,6 @@
-This is a copy of Ian Bruntlett's Gilded Rose Kata https://github.com/ihaworth/GildedRose-XPMan
+This is a copy of the Gilded Rose Kata https://github.com/ihaworth/GildedRose-XPMan
 that was run at XP Manchester http://xpmanchester.wordpress.com/2013/04/30/session-prereqs-for-crushing-legacy-code-session-on-9th-may/
+by Ian Haworth, Dan Smith and John Nolan.
 
 In this version I've completed the exercise for the C# code.
 
