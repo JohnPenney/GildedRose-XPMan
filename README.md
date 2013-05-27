@@ -1,3 +1,10 @@
+This is a copy of Ian Bruntlett's Gilded Rose Kata https://github.com/ihaworth/GildedRose-XPMan
+that was run at XP Manchester http://xpmanchester.wordpress.com/2013/04/30/session-prereqs-for-crushing-legacy-code-session-on-9th-may/
+
+In this version I've completed the exercise for the C# code.
+
+(My Git-skillz failed me and this is a simple copy of Ian's codebase with no Gittish linkage to his repo, soz.)
+
 Gilded Rose Requirements Specification
 ======================================
 
