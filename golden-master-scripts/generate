@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Based on scripts from https://github.com/SamirTalwar/trivia-golden-master.git
+
+if [ $# -ne 2 ]
+then
+	echo "Usage: generate \"<your command here>\" \"<output directory>\""
+	exit 1
+fi
+
+command=$1
+dir=$2
+
+mkdir -p $dir
+$command > $dir/golden-master

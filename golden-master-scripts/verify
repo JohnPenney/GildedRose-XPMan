@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Based on scripts from https://github.com/SamirTalwar/trivia-golden-master.git
+
+if [ $# -ne 2 ]
+then
+	echo "Usage: verify \"<your command here>\" \"<output directory>\""
+	exit 1
+fi
+
+command=$1
+dir=$2
+
+failures=0
+
+file=$dir/golden-master
+
+diff=`$command | diff $file -`
+if [[ ! -z $diff ]]
+    then
+    echo -e "`basename $file` failed."
+    echo "$diff"
+    failures=$(($failures + 1))
+fi
+
+if [[ $failures -eq 0 ]]
+then
+    echo -e "*** Passed ***"
+    exit 0
+else
+    echo -e "*** There were failures ***"
+    exit 1
+fi
